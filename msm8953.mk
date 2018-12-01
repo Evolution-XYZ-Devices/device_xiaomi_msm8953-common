@@ -350,6 +350,11 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
+# RCS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     Remove_Packages
