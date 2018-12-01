@@ -302,6 +302,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.post_boot.sh
 
+# RCS
+PRODUCT_PACKAGES += \
+    PresencePolling \
+    RcsService
+
 # RIL
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
