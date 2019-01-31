@@ -342,6 +342,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
+# ThermalController app
+PRODUCT_PACKAGES += \
+    ThermalController
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk-sp
