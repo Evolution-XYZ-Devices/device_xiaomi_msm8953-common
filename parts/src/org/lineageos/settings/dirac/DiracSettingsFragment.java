@@ -46,7 +46,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.dirac_settings);
 
-        DiracUtils.initialize();
+        DiracUtils.initialize(getActivity());
         boolean enhancerEnabled = DiracUtils.isDiracEnabled(getActivity());
 
         mSwitchBar = (MainSwitchPreference) findPreference(PREF_ENABLE);
@@ -80,8 +80,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     public void onSwitchChanged(Switch switchView, boolean isChecked) {
         mSwitchBar.setChecked(isChecked);
 
-        DiracUtils.setMusic(isChecked);
-
+        DiracUtils.setEnabled(isChecked);
         mHeadsetType.setEnabled(isChecked);
         mPreset.setEnabled(isChecked);
     }
