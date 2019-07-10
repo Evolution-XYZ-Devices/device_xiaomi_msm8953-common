@@ -134,6 +134,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 ro.vendor.qti.va_aosp.support=1
 
 # Media
+debug.stagefright.c2inputsurface=-1
 av.debug.disable.pers.cache=1
 media.aac_51_output_enabled=true
 media.msm8956hw=0
