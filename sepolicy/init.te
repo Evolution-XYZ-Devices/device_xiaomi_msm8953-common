@@ -3,3 +3,4 @@ allow init hal_memtrack_default:process noatsecure;
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 allow system_app sysfs_kgsl:lnk_file read;
 allow hal_fingerprint_default storage_file:lnk_file read;
+allow init system_file:file execute_no_trans;
