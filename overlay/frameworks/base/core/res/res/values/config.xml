@@ -639,4 +639,7 @@
      <!-- Blank Display After Doze -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- Whether device supports gestures on fingerprint sensor -->
+    <bool name="config_supportsGesturesOnFingerprintSensor">true</bool>
+
 </resources>
