@@ -26,10 +26,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v33.so'),
     ('vendor/etc/data/dsi_config.xml', 'vendor/etc/data/netmgr_config.xml'): blob_fixup()
         .fix_xml(),
-    ('vendor/lib/mediadrm/libwvdrmengine.so', 'vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
-        .replace_needed('libprotobuf-cpp-lite.so', 'libprotobuf-cpp-lite-v29.so'),
-    ('vendor/lib64/libril-qc-hal-qmi.so', 'vendor/lib64/libsettings.so',): blob_fixup()
-        .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-v29.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
