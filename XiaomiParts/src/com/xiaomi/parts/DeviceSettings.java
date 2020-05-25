@@ -13,7 +13,9 @@ import androidx.preference.SwitchPreference;
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
 import com.xiaomi.parts.preferences.SecureSettingListPreference;
 import com.xiaomi.parts.preferences.SecureSettingSwitchPreference;
-import com.xiaomi.parts.preferences.VibrationSeekBarPreference;
+import com.xiaomi.parts.preferences.VibratorStrengthPreference;
+import com.xiaomi.parts.preferences.VibratorCallStrengthPreference;
+import com.xiaomi.parts.preferences.VibratorNotifStrengthPreference;
 import com.xiaomi.parts.preferences.CustomSeekBarPreference;
 
 import com.xiaomi.parts.R;
@@ -27,7 +29,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_ENABLE_DIRAC = "dirac_enabled";
     private static final String PREF_HEADSET = "dirac_headset_pref";
     private static final String PREF_PRESET = "dirac_preset_pref";
- 
 
     //public static final String PREF_TORCH_BRIGHTNESS = "torch_brightness";
     //private static final String TORCH_1_BRIGHTNESS_PATH = "/sys/devices/soc/800f000.qcom," +
@@ -37,6 +38,14 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+
+    public static final String KEY_VIBSTRENGTH = "vib_strength";
+    private VibratorStrengthPreference mVibratorStrength;
+    public static final String KEY_CALL_VIBSTRENGTH = "vib_call_strength";
+    private VibratorCallStrengthPreference mVibratorCallStrength;
+    public static final String KEY_NOTIF_VIBSTRENGTH = "vib_notif_strength";
+    private VibratorNotifStrengthPreference mVibratorNotifStrength;
+
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -77,6 +86,16 @@ public class DeviceSettings extends PreferenceFragment implements
         usbfastCharger.setEnabled(FileUtils.fileWritable(USB_FASTCHARGE_PATH));
         usbfastCharger.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
         usbfastCharger.setOnPreferenceChangeListener(this);
+
+	mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
+        if (mVibratorStrength != null)
+            mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
+        mVibratorCallStrength = (VibratorCallStrengthPreference) findPreference(KEY_CALL_VIBSTRENGTH);
+        if (mVibratorCallStrength != null)
+            mVibratorCallStrength.setEnabled(VibratorCallStrengthPreference.isSupported());
+        mVibratorNotifStrength = (VibratorNotifStrengthPreference) findPreference(KEY_NOTIF_VIBSTRENGTH);
+        if (mVibratorNotifStrength != null)
+            mVibratorNotifStrength.setEnabled(VibratorNotifStrengthPreference.isSupported());
 
         Preference kcal = findPreference(PREF_DEVICE_KCAL);
         kcal.setOnPreferenceClickListener(preference -> {

@@ -31,8 +31,10 @@
     <string name="backlight_summary">Dim the display to the maximum value</string>
 
     <!-- Vibrator -->
-    <string name="vibration_strength_title">Strength</string>
-
+    <string name="vibration_title">Vibration feedback</string>
+    <string name="vibration_strength_title">System Strength</string>
+    <string name="vibration_call_strength_title">Call Strength</string>
+    <string name="vibration_notif_strength_title">Notification Strength</string>
     <!-- kcal -->
     <string name="device_kcal_title">Display Calibration</string>
     <string name="device_kcal_summary">Display color calibration using KCAL</string>

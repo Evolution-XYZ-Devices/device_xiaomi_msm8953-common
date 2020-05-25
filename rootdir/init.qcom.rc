@@ -48,6 +48,13 @@ on init
     write /proc/sys/vm/page-cluster 0
 
 on post-fs
+    # Vibrator
+    chown system system /sys/class/leds/vibrator/vmax_mv_user
+    chown system system /sys/class/leds/vibrator/vmax_mv_call
+    chown system system /sys/class/leds/vibrator/vmax_mv_strong
+    chown system system sys/class/leds/vibrator/vmax_override
+    chmod 0660 /sys/class/leds/vibrator/vmax_override
+    write /sys/class/leds/vibrator/vmax_override 1
     chmod 0755 /sys/kernel/debug/tracing
 
 on early-boot
@@ -631,12 +638,6 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
 
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
-
-# XiaomiParts
-    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
-    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
-    chown system system /sys/module/hall/parameters/hall_toggle
-    chmod 0660 /sys/module/hall/parameters/hall_toggle
 
 # KCal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
