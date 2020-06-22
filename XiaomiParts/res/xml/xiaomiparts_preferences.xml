@@ -35,27 +35,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="vibration"
-        android:title="@string/vibration_title">
-
-        <com.xiaomi.parts.preferences.VibratorStrengthPreference
-            android:key="vib_strength"
-            android:icon="@drawable/ic_vibrate"
-            android:title="@string/vibration_strength_title" />
-
-         <com.xiaomi.parts.preferences.VibratorNotifStrengthPreference
-             android:key="vib_notif_strength"
-             android:icon="@drawable/ic_vibrate_notif"
-             android:title="@string/vibration_notif_strength_title" />
-
-	 <com.xiaomi.parts.preferences.VibratorCallStrengthPreference
-            android:key="vib_call_strength"
-            android:icon="@drawable/ic_vibrate_call"
-            android:title="@string/vibration_call_strength_title" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="display"
         android:title="@string/display_category">
 
