@@ -56,3 +56,5 @@
 # FPS Info
 /sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
 
+# Usb
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.msm8953       u:object_r:hal_usb_default_exec:s0
