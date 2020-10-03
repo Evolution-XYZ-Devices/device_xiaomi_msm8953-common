@@ -366,7 +366,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Speed up
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep \
+    NexusLauncherRelease \
     Settings \
     SystemUI
 
