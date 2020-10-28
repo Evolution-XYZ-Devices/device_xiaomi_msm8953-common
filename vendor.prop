@@ -189,3 +189,6 @@ persist.sys.binary_xml=false
 
 # Time Services
 persist.timed.enable=true
+
+# Zygote
+zygote.critical_window.minute=10
