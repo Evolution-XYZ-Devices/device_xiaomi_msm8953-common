@@ -552,7 +552,6 @@
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
     <string name="config_SmartChargingResumeValue" translatable="false">1</string>
-    <bool name="config_smartChargingAvailable">true</bool>
 
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
@@ -612,7 +611,7 @@
     <!-- List of comma separated package names for 
     which we the system will not show crash, ANR,
          etc. dialogs. --> 
-     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
+    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 
     <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
@@ -621,10 +620,9 @@
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">232</integer>
 
-     <!-- Blank Display After Doze -->
+    <!-- Blank Display After Doze -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
     <!-- Whether device supports gestures on fingerprint sensor -->
     <bool name="config_supportsGesturesOnFingerprintSensor">true</bool>
-
 </resources>
