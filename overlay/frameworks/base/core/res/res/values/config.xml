@@ -479,4 +479,7 @@
 
     <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
+
+    <!-- Enable Smart charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
 </resources>
