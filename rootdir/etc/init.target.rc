@@ -77,7 +77,7 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class main
     user camera
     group camera system inet input graphics
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 #Start up peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
@@ -85,14 +85,14 @@ service vendor.per_mgr /vendor/bin/pm-service
     user system
     group system
     ioprio rt 4
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
@@ -104,7 +104,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
@@ -114,7 +114,7 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 service adsprpcd /system/vendor/bin/adsprpcd
    class main
@@ -132,14 +132,14 @@ service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
     user system
     socket ims_qmid stream 0660 system radio
     group radio log diag
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.imsdatadaemon /system/vendor/bin/imsdatadaemon
     class main
     user system
     socket ims_datad stream 0660 system radio
     group system wifi radio inet log diag
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
     disabled
 
 on property:vendor.ims.QMI_DAEMON_STATUS=1
@@ -149,13 +149,13 @@ service vendor.ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
    user system
    group radio diag inet log
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 service vendor.imsrcsservice /system/vendor/bin/imsrcsd
    class main
    user system
    group radio diag inet log wakelock
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
    restart vendor.ims_rtp_daemon
