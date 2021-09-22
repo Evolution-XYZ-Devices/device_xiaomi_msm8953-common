@@ -1,2 +1,8 @@
 # Dirac
 type dirac_prop, property_type;
+
+# GPUboost
+type gpuboost_prop, property_type;
+
+# CPUboost
+type cpuboost_prop, property_type;
