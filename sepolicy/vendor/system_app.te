@@ -20,8 +20,6 @@ allow system_app {
     sysfs_leds
 }:dir search;
 allow system_app sysfs_fastcharge:file { open read getattr write };
-allow system_app spectrum_prop:property_service set;
-get_prop(system_app, spectrum_prop);
 
 # Boosts
 allow system_app sysfs_touchboost:file { open read getattr write };
@@ -34,3 +32,7 @@ set_prop(system_app, gpuboost_prop);
 allow system_app cpuboost_prop:property_service set;
 get_prop(system_app, cpuboost_prop);
 set_prop(system_app, cpuboost_prop);
+
+# Spectrum
+allow system_app spectrum_prop:property_service set;
+get_prop(system_app, spectrum_prop);

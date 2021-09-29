@@ -6,3 +6,7 @@ allow toolbox gpuboost_prop:property_service { set };
 allow toolbox gpuboost_prop:file { getattr  open  read };
 allow toolbox spectrum_prop:property_service { set };
 allow toolbox spectrum_prop:file { getattr  open  read };
+
+# Spectrum
+allow toolbox spectrum_prop:property_service { set };
+

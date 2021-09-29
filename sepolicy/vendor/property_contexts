@@ -15,3 +15,7 @@ persist.gpuboost.profile           u:object_r:gpuboost_prop:s0
 
 # CPUboost
 persist.cpuboost.profile           u:object_r:cpuboost_prop:s0
+
+# Spectrum
+persist.spectrum.profile                      u:object_r:spectrum_prop:s0
+
