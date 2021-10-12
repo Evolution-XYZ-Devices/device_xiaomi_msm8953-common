@@ -41,6 +41,9 @@ qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 
+# Blur
+persist.sys.sf.disable_blurs=1
+
 # Bpf
 ro.kernel.ebpf.supported=1
 
