@@ -39,7 +39,8 @@
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver"
+                  android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -48,6 +49,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
+            android:exported="false"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -88,12 +90,15 @@
                        android:resource="@string/torch_summary" />
         </activity>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
+        <service
+            android:name=".doze.DozeService"
+            android:permission="XiaomiDozeService"
+            android:exported="false">
         </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
+            android:exported="false"
             android:label="@string/ambient_display_title"
 	    android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
