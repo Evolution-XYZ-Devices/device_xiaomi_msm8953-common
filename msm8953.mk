@@ -402,15 +402,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # XiaomiParts
-PRODUCT_PACKAGES += \
-    XiaomiParts \
-    init.xiaomi_parts.rc \
-    init.gpuboost.rc \
-    init.gpuboost.sh \
-    init.cpuboost.rc \
-    init.cpuboost.sh \
-    init.spectrum.rc \
-    init.spectrum.sh
+#PRODUCT_PACKAGES += \
+#    XiaomiParts \
+#    init.xiaomi_parts.rc \
+#    init.gpuboost.rc \
+#    init.gpuboost.sh \
+#    init.cpuboost.rc \
+#    init.cpuboost.sh \
+#    init.spectrum.rc \
+#    init.spectrum.sh
 
 # for the sake of a12
 SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
