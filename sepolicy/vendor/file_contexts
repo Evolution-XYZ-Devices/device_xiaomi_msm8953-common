@@ -38,15 +38,9 @@
 /(vendor|system/vendor)/usr/idc(/.*)?                         u:object_r:vendor_idc_file:s0
 /(vendor|system/vendor)/usr/keylayout(/.*)?                   u:object_r:vendor_keylayout_file:s0
 
-<<<<<<< HEAD
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
 
-# Location
-/data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
-
-=======
->>>>>>> 4a79aa0 (msm8937-common: sepolicy: Remove redundant rules)
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril\.db			u:object_r:rild_file:s0
 
