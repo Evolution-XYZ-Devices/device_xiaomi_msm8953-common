@@ -628,4 +628,8 @@
     which we the system will not show crash, ANR,
          etc. dialogs. --> 
      <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
+
+     <bool name="config_button_brightness_support">true</bool>
+     <integer name="config_button_brightness_default">128</integer>
+
 </resources>
