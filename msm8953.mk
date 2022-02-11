@@ -64,7 +64,8 @@ PRODUCT_PACKAGES += \
     AntHalService
 
 # Device-specific Settings
-$(call inherit-product, vendor/xiaomi/part/part.mk)
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Audio
 PRODUCT_PACKAGES += \
