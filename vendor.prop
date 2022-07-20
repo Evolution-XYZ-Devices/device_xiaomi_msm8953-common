@@ -43,7 +43,6 @@ vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
-bluetooth.hardware.power.operating_voltage_mv=3300
 bluetooth.hfp.client=1
 persist.vendor.btstack.enable.splita2dp=false
 qcom.bluetooth.soc=smd
