@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt-V3
 
 # Crypto
 PRODUCT_PACKAGES += \
