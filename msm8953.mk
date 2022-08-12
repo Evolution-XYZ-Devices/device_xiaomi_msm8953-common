@@ -247,7 +247,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.lights-service.xiaomi_msm8953
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -338,8 +338,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi
+    $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \
