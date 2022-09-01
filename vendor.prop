@@ -163,6 +163,11 @@ ro.soc.model=MSM8953
 # Time Services
 persist.timed.enable=true
 
+# USB
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+
 # Watchdog
 ro.hw_timeout_multiplier=3
 
