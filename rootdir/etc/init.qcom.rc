@@ -404,12 +404,6 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.zram
     write /proc/sys/vm/swappiness 100
 
-on property:persist.vendor.radio.atfwd.start=false
-    stop vendor.atfwd
-
-on property:vendor.radio.atfwd.start=false
-    stop vendor.atfwd
-
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
     restart vendor.camera-provider-2-4
@@ -450,12 +444,6 @@ service vendor.tftp_server /vendor/bin/tftp_server
    class core
    user root
    task_profiles ServiceCapacityLow
-
-service atfwd /vendor/bin/ATFWD-daemon
-    class late_start
-    user system
-    group system radio
-    task_profiles ServiceCapacityLow
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
