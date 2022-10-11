@@ -29,3 +29,4 @@ r_dir_file(hal_fingerprint_default, sysfs_battery_supply)
 r_dir_file(hal_fingerprint_default, sysfs_leds)
 
 allow hal_fingerprint_default rootfs:dir r_dir_perms;
+allow hal_fingerprint_default system_data_root_file:dir r_dir_perms;
