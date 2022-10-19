@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3
+    GCamGOPrebuilt-V2
 
 # Crypto
 PRODUCT_PACKAGES += \
