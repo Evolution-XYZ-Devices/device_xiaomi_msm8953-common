@@ -89,6 +89,7 @@ debug.sf.recomputecrop=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
+debug.cpurend.vsync=false
 persist.hwc.mdpcomp.enable=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=msm8953
