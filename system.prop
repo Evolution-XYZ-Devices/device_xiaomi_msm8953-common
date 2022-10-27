@@ -39,6 +39,9 @@ persist.qfp=false
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Radio
+ro.telephony.block_binder_thread_on_incoming_calls=false
+
 # storage.xml moment
 persist.sys.binary_xml=false
 
