@@ -199,8 +199,5 @@ vendor.usb.rndis.func.name=rndis_bam
 # Watchdog
 ro.hw_timeout_multiplier=3
 
-# Disable bootanimation
-debug.sf.nobootanimation=1
-
 # Zygote
 zygote.critical_window.minute=10
