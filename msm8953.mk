@@ -124,13 +124,9 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service
-
-PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service \
+    GCamGOPrebuilt \
     libstdc++.vendor
-
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V2
 
 # Display
 PRODUCT_PACKAGES += \
@@ -326,7 +322,7 @@ PRODUCT_PACKAGES += \
 
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
-    Remove_Packages
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
