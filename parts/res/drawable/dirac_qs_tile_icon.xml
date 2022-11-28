@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The LineageOS Project
+<!--
+     Copyright (C) 2019 Havoc-OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,9 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
 
-<resources>
-    <color name="switchbar_switch_track_tint">#82000000</color>
-    <color name="switchbar_switch_thumb_tint">@android:color/black</color>
-</resources>
-
+    <path
+        android:strokeColor="#FF000000"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M11.5,4h-6v4l4,4l-4,4v4h6H11c4.4,0,8-3.6,8-8s-3.6-8-8-8" />
+</vector>

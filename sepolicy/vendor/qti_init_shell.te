@@ -3,3 +3,7 @@ allow qti_init_shell proc_touchpanel:file { getattr setattr };
 
 allow qti_init_shell ctl_start_prop:property_service set;
 dontaudit qti_init_shell self:capability dac_override;
+
+# Kcal
+allow qti_init_shell kcal_dev:dir search;
+allow qti_init_shell kcal_dev:file rw_file_perms;

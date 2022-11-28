@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2018 The LineageOS Project
+<!-- Copyright (C) 2018 The Asus-SDM660 Project
+     Copyright (C) 2017-2022 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,26 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Ambient settings -->
-    <string name="ambient_enable">Use ambient display</string>
+    <string name="ambient_enable">Use Ambient Display</string>
+
+    <!-- Audio amplification -->
+    <string name="audio_title">Audio Amplification</string>
+    <string name="audio_summary">Sound control settings</string>
+    <string name="headphone_gain">Headphone gain</string>
+    <string name="microphone_gain">Microphone gain</string>
+    <string name="speaker_gain">Speaker gain</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
     <!-- Dirac settings -->
-    <string name="dirac_enable">Use Mi Sound Enhancer</string>
-    <string name="dirac_title">Mi Sound Enhancer</string>
+    <string name="dirac_enable">Enable dirac</string>
+    <string name="dirac_title">Dirac™ Sound</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphones type</string>
     <string name="dirac_preset_title">Choose a preset</string>
@@ -61,4 +74,82 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_bass_booster">Bass Booster</string>
+    <string name="dirac_preset_live">Live</string>
+    <string name="dirac_preset_balanced">Balanced</string>
+    <string name="dirac_preset_bass_reduction">Bass Reduction</string>
+    <string name="dirac_preset_treble_reduction">Treble Reduction</string>
+    <string name="dirac_preset_soft_bass">Soft Bass</string>
+    <string name="dirac_preset_soft_treble">Soft Treble</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">Display Color Calibration</string>
+    <string name="cat_colormanagement">Color Settings</string>
+    <string name="cat_calibration">Display Calibration</string>
+
+    <string name="kcal_enabled">On</string>
+    <string name="kcal_disabled">Off</string>
+    <string name="set_on_boot">Set On Boot</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_minimum">Minimum</string>
+    <string name="saturation">Saturation</string>
+    <string name="value">Value</string>
+    <string name="contrast">Contrast</string>
+    <string name="hue">Hue</string>
+    <string name="grayscale">Grayscale Display</string>
+
+    <!-- kcal menu -->
+    <string name="kcal_presets">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- kcal Presets -->
+    <string name="presets_dialog_title">Select Preset</string>
+    <string name="preset_default">Default</string>
+    <string name="preset_version_1">Version 1</string>
+    <string name="preset_version_2">Version 2</string>
+    <string name="preset_version_3">Version 3</string>
+    <string name="preset_triluminous">Triluminous</string>
+    <string name="preset_deep_black_white">Deep Black and White</string>
+    <string name="preset_deep_natural">Deep Natural</string>
+    <string name="preset_cool_amoled">Cool Amoled</string>
+    <string name="preset_extreme_amoled">Extreme Amoled</string>
+    <string name="preset_warm_amoled">Warm Amoled</string>
+    <string name="preset_hybrid_mamba">Hybrid Mamba</string>
+    <string name="preset_burn_in">Burn In</string>
+    <string name="preset_retention">Retention Fix</string>
+    <string name="preset_gerard_extrem_cool">Gerard Extreme Cool</string>
+    <string name="preset_yoyoz808">Yoyoz808</string>
+    <string name="preset_purian">Purian</string>
+    <string name="preset_deep_black_colorful">Deep Black Colorful</string>
+    <string name="preset_vomer_deep_rich">Vomer Deep Rich</string>
+    <string name="preset_franco">Franco</string>
+    <string name="preset_wrinklefree_cool">WrinkleFree Cool</string>
+    <string name="preset_harley_tech">Harley-Tech</string>
+    <string name="preset_perfection">Perfection</string>
+    <string name="preset_banged_up">Banged up</string>
+    <string name="preset_sim_cooler">SimCooler</string>
+    <string name="preset_obsanity">Obsanity</string>
+    <string name="preset_obsanity_ips">Obsanity IPS</string>
+    <string name="preset_sir_banger">Sir Banger</string>
+
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Dirac sound</string>
+
+    <!-- Torch -->
+    <string name="torch_title">Torch Settings</string>
+    <string name="torch_summary">Flashlight white/yellow control</string>
+    <string name="yellow_torch_brightness_title">Yellow Torch Brightness</string>
+    <string name="white_torch_brightness_title">White Torch Brightness</string>
+
+    <!-- Vibration Intensity -->
+    <string name="haptic_warning">Setting-up haptic level too high may cause permanent hardware damage, use at your own risk</string>
+    <string name="haptic_summary">Customize vibration intensity</string>
+    <string name="vibrator_intensity_control">Vibration Intensity Control</string>
+    <string name="vmax_override_mode_title">Override Vibration Intensity</string>
+    <string name="vmax_override_mode_summary">Overrides vibration intensity value for all notification events</string>
+    <string name="system_strength_title">System Vibration strength</string>
+    <string name="call_strength_title">Call Vibration strength</string>
+    <string name="notif_strength_title">Notification Vibration strength</string>
 </resources>
