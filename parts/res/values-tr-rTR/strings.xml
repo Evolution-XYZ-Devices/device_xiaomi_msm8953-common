@@ -148,4 +148,9 @@
     <string name="vmax_override_mode_title">Titreşim Yoğunluğunu Geçersiz Kıl</string>
     <string name="vmax_override_mode_summary">Tüm bildirim olayları için titreşim yoğunluğu değerini geçersiz kılar</string>
     <string name="system_strength_title">Titreşim gücü</string>
+	
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Hoparlörü temizle</string>
+    <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniye boyunca bir ses çal</string>
+    <string name="clear_speaker_description">Eğer hoparlörünüzün hafifçe tıkandığını hissediyorsanız bu özelliği bir veya iki kez çalıştırın. Medya sesini maksimum düzeye getirin.\n\nEğer hoparlörünüz çok tıkalı ise, bu özelliği cihazın hoparlörünü aşağı bakacak şekilde sallayarak 2 ila 5 kez çalıştırın.\n\nUYARI: Kulaklığınızın takılı olmadığından emin olun.</string>
 </resources>
