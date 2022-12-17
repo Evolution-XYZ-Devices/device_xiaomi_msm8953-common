@@ -60,26 +60,31 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        etc/permissions/privapp-permissions-qti.xml)
-            # MODIFY_PHONE_STATE
-            sed -i 's|<permission name="android.permission.READ_PRECISE_PHONE_STATE"/>|<permission name="android.permission.MODIFY_PHONE_STATE"/>\n        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>|g' "${2}"
-            # READ_PRIVILEGED_PHONE_STATE
-            sed -i 's|<permission name="android.permission.READ_PRECISE_PHONE_STATE"/>|<permission name="android.permission.READ_PRECISE_PHONE_STATE"/>\n        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>|g' "${2}"
-            # WRITE_SECURE_SETTINGS
-            sed -i 's|<permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>|<permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>\n        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>|g' "${2}"
-            ;;
-        product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
+        product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
-        product/lib64/libdpmframework.so)
-            for LIBSHIM_DPMFRAMEWORK in $(grep -L "libshim_dpmframework.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
-            done
+        system_ext/etc/init/dpmd.rc)
+            sed -i "s|/system/product/bin/|/system/system_ext/bin/|g" "${2}"
             ;;
-        product/lib64/lib-imsvideocodec.so)
-            for LIBSHIM_IMSVIDEOCODEC in $(grep -L "libshim_imsvideocodec.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_imsvideocodec.so" "$LIBSHIM_IMSVIDEOCODEC"
-            done
+        system_ext/etc/permissions/com.qti.dpmframework.xml \
+        | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+        | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+        | system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+        | system_ext/etc/permissions/dpmapi.xml \
+        | system_ext/etc/permissions/telephonyservice.xml )
+            sed -i "s|/system/product/framework/|/system/system_ext/framework/|g" "${2}"
+            ;;
+        system_ext/etc/permissions/embms.xml)
+            sed -i "s|/product/framework/|/system_ext/framework/|g" "${2}"
+            ;;
+        system_ext/etc/permissions/qcrilhook.xml)
+            sed -i 's|/product/framework/qcrilhook.jar|/system_ext/framework/qcrilhook.jar|g' "${2}"
+            ;;
+        system_ext/lib64/libdpmframework.so)
+            grep -q "libcutils_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
+            ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
