@@ -159,7 +159,6 @@ on boot
     mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
     mkdir /persist/misc 0770 system system
     mkdir /persist/alarm 0770 system system
-    mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
     restorecon_recursive /mnt/vendor/persist
 
@@ -337,9 +336,6 @@ on post-fs-data
     mkdir /data/vendor/location-partner/ppe 0770 gps gps
     mkdir /dev/socket/location 0770 gps gps
     mkdir /dev/socket/location/ehub 0770 gps gps
-
-    # Create /data/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
 
     setprop vold.post_fs_data_done 1
 

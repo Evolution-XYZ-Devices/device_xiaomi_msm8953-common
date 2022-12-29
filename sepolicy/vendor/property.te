@@ -3,3 +3,6 @@ system_public_prop(dirac_prop)
 
 # Fingerprint
 vendor_restricted_prop(vendor_fp_prop)
+
+# Time
+vendor_internal_prop(vendor_timekeep_prop)
