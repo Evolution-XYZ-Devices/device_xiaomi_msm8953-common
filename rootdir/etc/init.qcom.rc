@@ -509,6 +509,12 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
     group root
     disabled
 
+service vendor.power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
 on charger
     setprop persist.sys.usb.config mass_storage
 
@@ -517,6 +523,7 @@ on charger
     write /sys/class/leds/red/brightness 255
     
     start qcom-post-boot
+    start vendor.power_off_alarm
 
 # Logcat Services
 service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
