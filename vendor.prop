@@ -96,7 +96,6 @@ dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 debug.cpurend.vsync=false
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 persist.hwc.mdpcomp.enable=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=msm8953
