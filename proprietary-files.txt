@@ -30,8 +30,9 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
-# ANT+ (vendor)
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# ANT+ - from LA.UM.10.6.2.r1-01600-89xx.0
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|ed5fa24a93d84833726666206381aa59fc7371c8
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|713d4c07424068a29875fcf727eef8f15e50d483
 
 # Audio
 -vendor/lib/libaudio_log_utils.so
