@@ -33,6 +33,7 @@
     <string name="custom_seekbar_default_value_is_set">Varsayılan değer ayarlandı</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Etkinleştir</string>
     <string name="dirac_title">Mi Ses Yükseltici</string>
     <string name="dirac_summary">Ses kalitesini optimize et</string>
     <string name="dirac_headset_title">Kulaklık türünü seçin</string>
@@ -148,6 +149,8 @@
     <string name="vmax_override_mode_title">Titreşim Yoğunluğunu Geçersiz Kıl</string>
     <string name="vmax_override_mode_summary">Tüm bildirim olayları için titreşim yoğunluğu değerini geçersiz kılar</string>
     <string name="system_strength_title">Titreşim gücü</string>
+    <string name="call_strength_title">Arama titreşim gücü</string>
+    <string name="notif_strength_title">Bildirim titreşim gücü</string>
 	
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Hoparlörü temizle</string>
