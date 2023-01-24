@@ -46,6 +46,7 @@ vendor.voice.voip.conc.disabled=true
 qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
+vendor.qcom.bluetooth.soc=smd
 
 # Blur
 persist.sys.sf.disable_blurs=1
