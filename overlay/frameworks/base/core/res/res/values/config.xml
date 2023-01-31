@@ -614,4 +614,7 @@
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
+
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">false</bool>
 </resources>
