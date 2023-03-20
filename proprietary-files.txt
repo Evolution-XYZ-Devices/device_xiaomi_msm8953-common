@@ -364,6 +364,10 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 
+# Keystore - from LA.UM.10.6.2.r1-01600-89xx.0
+vendor/lib64/hw/keystore.msm8953.so|7d54e81c15620d2bac5aee98ae4a9e629b3a585f
+vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
+
 # Media
 -vendor/lib/libgpustats.so
 -vendor/lib64/libgpustats.so
