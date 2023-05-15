@@ -152,8 +152,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libqcomfmjni
+    FMRadio \
+    libfmjni
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
