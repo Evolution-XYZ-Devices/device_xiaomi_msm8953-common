@@ -114,9 +114,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libstdc++.vendor
 
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
