@@ -13,6 +13,12 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/xiaomi/msm8953-common',
+    'hardware/qcom-caf/msm8996',
+    'vendor/qcom/opensource/dataservices',
+]
+
 blob_fixups: blob_fixups_user_type = {
     ('product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml', 'product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml'): blob_fixup()
         .regex_replace('version="2.0"', 'version="1.0"'),
@@ -34,6 +40,7 @@ module = ExtractUtilsModule(
     'msm8953-common',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
