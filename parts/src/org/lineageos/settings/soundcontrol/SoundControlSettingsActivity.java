@@ -22,7 +22,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class SoundControlSettingsActivity extends CollapsingToolbarBaseActivity {
 
@@ -32,11 +31,11 @@ public class SoundControlSettingsActivity extends CollapsingToolbarBaseActivity 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
+        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
         if (fragment == null) {
             mSoundControlSettingsFragment = new SoundControlSettings();
             getFragmentManager().beginTransaction()
-                    .add(R.id.content_frame, mSoundControlSettingsFragment)
+                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, mSoundControlSettingsFragment)
                     .commit();
         } else {
             mSoundControlSettingsFragment = (SoundControlSettings) fragment;

@@ -19,7 +19,6 @@ package org.lineageos.settings.vibration;
 import android.app.ActionBar;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class VibratorActivity extends CollapsingToolbarBaseActivity {
 
@@ -27,7 +26,7 @@ public class VibratorActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction()
-                .replace(R.id.content_frame, new VibratorSettings())
+                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new VibratorSettings())
                 .commit();
     }
 }
