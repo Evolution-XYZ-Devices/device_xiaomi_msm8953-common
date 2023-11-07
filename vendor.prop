@@ -117,9 +117,6 @@ vendor.display.disable_rotator_downscale=1
 # DRM
 drm.service.enabled=true
 
-# Encryption
-ro.crypto.volume.contents_mode=aes-256-xts
-
 # Fingerprint
 persist.qfp=false
 
