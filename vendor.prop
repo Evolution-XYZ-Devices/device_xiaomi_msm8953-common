@@ -73,7 +73,6 @@ vidc.enc.dcvs.extra-buff-count=2
 
 # Charger
 ro.charger.disable_init_blank=true
-ro.charger.enable_suspend=true
 
 # CNE
 persist.vendor.cne.feature=1
