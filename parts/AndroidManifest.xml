@@ -45,7 +45,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -60,7 +60,7 @@
  
         <activity
             android:name=".soundcontrol.SoundControlSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/audio_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -74,7 +74,7 @@
 
         <activity
             android:name=".torch.TorchSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/torch_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -86,10 +86,8 @@
                        android:resource="@string/torch_summary" />
         </activity>
 
-        <service
-            android:name=".doze.DozeService"
-            android:permission="XiaomiDozeService"
-            android:exported="false">
+        <service android:name=".doze.DozeService"
+                 android:permission="XiaomiDozeService">
         </service>
 
         <activity
@@ -105,6 +103,7 @@
 
         <service
             android:name=".dirac.DiracTileService"
+            android:exported="true"
             android:icon="@drawable/dirac_qs_tile_icon"
             android:label="@string/dirac_qs_tile_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -126,7 +125,7 @@
 
         <activity
             android:name=".vibration.VibratorActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/vibrator_intensity_control"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -139,7 +138,8 @@
         </activity>
 
         <activity
-            android:name=".speaker.ClearSpeakerActivity" 
+            android:name=".speaker.ClearSpeakerActivity"
+            android:exported="false"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
