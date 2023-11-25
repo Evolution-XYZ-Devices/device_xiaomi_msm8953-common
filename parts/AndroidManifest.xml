@@ -125,7 +125,7 @@
 
         <activity
             android:name=".vibration.VibratorActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/vibrator_intensity_control"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
