@@ -45,7 +45,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/dirac_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -60,7 +60,7 @@
  
         <activity
             android:name=".soundcontrol.SoundControlSettingsActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/audio_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -74,7 +74,7 @@
 
         <activity
             android:name=".torch.TorchSettingsActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/torch_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -103,7 +103,7 @@
 
         <service
             android:name=".dirac.DiracTileService"
-            android:exported="true"
+            android:exported="false"
             android:icon="@drawable/dirac_qs_tile_icon"
             android:label="@string/dirac_qs_tile_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -114,7 +114,7 @@
 
         <activity
             android:name=".kcal.KCalSettingsActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/advanced_settings_kcal">
 
             <intent-filter>
