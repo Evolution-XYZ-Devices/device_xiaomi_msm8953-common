@@ -182,7 +182,7 @@ vendor.service.qti.ims.enabled=1
 
 # SoC
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM450
+ro.soc.model=SDM625
 
 # System
 persist.sys.binary_xml=false
