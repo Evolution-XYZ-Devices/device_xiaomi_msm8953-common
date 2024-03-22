@@ -363,7 +363,7 @@ PRODUCT_COPY_FILES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.msm8953
+    android.hardware.usb@1.3-service.basic
 
 # VNDK
 PRODUCT_COPY_FILES += \
