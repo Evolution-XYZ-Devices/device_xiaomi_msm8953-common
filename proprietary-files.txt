@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# caymanslm: caymanslm-user 12 SKQ1.211103.001 8450120221101 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -435,7 +436,7 @@ vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Power-off alarm - from caymanslm - SKQ1.211103.001
+# Power-off alarm - from caymanslm
 product/app/PowerOffAlarm/PowerOffAlarm.apk:system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|f0a86fc11b38c059912303857bc4c79155430bcc
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|37b4999095331f4f3dd6c118ee0bdea4bdf7f003
 vendor/bin/power_off_alarm|04e651db91ca2598f1bf50453fdb49a63463b2dc
