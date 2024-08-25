@@ -134,11 +134,11 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/init/cnd.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
@@ -211,7 +211,7 @@ vendor/lib64/libssd.so
 
 # GPS
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
@@ -242,40 +242,44 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/hw/vulkan.msm8953.so
+vendor/lib/egl/libq3dtools_adreno.so;DISABLE_CHECKELF
+vendor/lib/hw/vulkan.msm8953.so;DISABLE_CHECKELF
 vendor/lib/libC2D2.so
-vendor/lib/libCB.so
+vendor/lib/libCB.so;DISABLE_CHECKELF
 vendor/lib/libOpenCL.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
+vendor/lib/libgsl.so;DISABLE_CHECKELF
 vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libmm-hdcpmgr.so
+vendor/lib/librs_adreno.so;DISABLE_CHECKELF
+vendor/lib/librs_adreno_sha1.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
 vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/hw/vulkan.msm8953.so
+vendor/lib64/egl/libq3dtools_adreno.so;DISABLE_CHECKELF
+vendor/lib64/hw/vulkan.msm8953.so;DISABLE_CHECKELF
 vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
+vendor/lib64/libCB.so;DISABLE_CHECKELF
 vendor/lib64/libOpenCL.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
+vendor/lib64/libgsl.so;DISABLE_CHECKELF
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/librs_adreno.so;DISABLE_CHECKELF
+vendor/lib64/librs_adreno_sha1.so
 
 # Graphics (SDM)
 vendor/lib/libscalar.so
@@ -530,7 +534,7 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so:system_ext/lib64/vendor.qti.imsrtp
 product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk
 system/etc/permissions/com.qualcomm.qti.imscmservice.xml
 vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/etc/init/ims_rtp_daemon.rc
