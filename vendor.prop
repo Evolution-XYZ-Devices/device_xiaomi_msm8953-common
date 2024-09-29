@@ -121,6 +121,7 @@ vendor.display.disable_rotator_downscale=1
 drm.service.enabled=true
 
 # Fingerprint
+persist.vendor.fingerprint.type=rear
 persist.qfp=false
 
 # FM
