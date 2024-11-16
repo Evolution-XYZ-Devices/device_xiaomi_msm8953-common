@@ -44,7 +44,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('/product/', '/system_ext/'),
     'system_ext/lib64/libdpmframework.so': blob_fixup()
         .add_needed('libcutils_shim.so'),
-    'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
+    ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
         .add_needed('libutils-v33.so'),
