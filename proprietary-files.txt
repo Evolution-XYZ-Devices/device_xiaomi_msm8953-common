@@ -1,6 +1,11 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 # caymanslm: caymanslm-user 12 SKQ1.211103.001 8450120221101 release-keys
 
+# Current blobs with ELF checks disabled:
+# libGLESv1_CM_adreno, libq3dtools_adreno, vulkan.msm8953, libCB, libgsl, librs_adreno depend on NDK libnativewindow and build is unable to resolve its symbols
+# libcne, libwqe, imsdatadaemon, lowi-server depend on libwpa_client, which is a gnu makefile target
+# lowi-server depend on libwifi-hal-ctrl, which is a gnu makefile target
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
