@@ -152,8 +152,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-service-qti \
     libbatching \
     libgeofencing \
-    libgnss \
-    libwifi-hal-ctrl
+    libgnss
 
 PRODUCT_PACKAGES += \
     flp.conf \
@@ -342,6 +341,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwpa_client \
     hostapd \
+    wcnss_service \
     wificond \
     WifiOverlay \
     wpa_supplicant \
