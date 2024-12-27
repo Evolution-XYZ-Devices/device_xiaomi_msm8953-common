@@ -240,7 +240,6 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
-    init.parts.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
